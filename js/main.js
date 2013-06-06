@@ -48,7 +48,7 @@
 
       // Get image handle
       //
-      var largeImage = document.getElementById('largeImage');
+      var largeImage = document.getElementById('playboard-normal');
 
       // Unhide image elements
       //
