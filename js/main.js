@@ -25,13 +25,13 @@
 
       // Get image handle
       //
-      //var playboard-normal = document.getElementById('playboard-normal');
-      var playboard = $('.playboard').val();
+      var playboard = document.getElementById('playboard-normal');
+      //var playboard = $('.playboard').val();
 
       // Unhide image elements
       //
-      playboard.width(200);
-      playboard.height(200);
+      //playboard.width(200);
+      //playboard.height(200);
       playboard.style.display = 'block';
 
       // Show the captured photo
