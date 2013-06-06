@@ -25,18 +25,19 @@
 
       // Get image handle
       //
-      var playboard-normal = document.getElementById('playboard-normal');
+      //var playboard-normal = document.getElementById('playboard-normal');
+      var playboard = $('.playboard').val();
 
       // Unhide image elements
       //
-      playboard-normal.width(200);
-      playboard-normal.height(200);
-      playboard-normal.style.display = 'block';
+      playboard.width(200);
+      playboard.height(200);
+      playboard.style.display = 'block';
 
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      playboard-normal.src = /*"data:image/jpeg;base64," + */imageData;
+      playboard.src = /*"data:image/jpeg;base64," + */imageData;
     }
 
     // Called when a photo is successfully retrieved
