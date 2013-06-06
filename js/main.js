@@ -21,7 +21,7 @@
     //
     function onPhotoDataSuccess(imageData) {
       // Uncomment to view the base64 encoded image data
-      console.log(imageData);
+      //console.log(imageData);
 
       // Get image handle
       //
@@ -30,8 +30,8 @@
 
       // Unhide image elements
       //
-      //playboard.width(200);
-      //playboard.height(200);
+      playboard.width(100);
+      playboard.height(100);
       playboard.style.display = 'block';
 
       // Show the captured photo
