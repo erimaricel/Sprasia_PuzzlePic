@@ -167,6 +167,8 @@
 
 
     function start(imageData) {
+
+      
       var i = 1;
       var z = 1
       var x = 0;
@@ -182,7 +184,7 @@
           var roll = array.splice(num, 1);
           m = roll;
           $("#playblock"+z).append("<div id='puzz"+z+"' class='puzz'></div>");
-          $("#puzz"+z).append("<img class='img' id='img"+m+"' draggable='false'  style='overflow: hidden;' src='"+imageData+"' width='200px' height='200px' alt='Clipped image'/>");
+          $("#puzz"+z).append("<img class='img' id='img"+m+"' draggable='false'  style='overflow: hidden;' src="" width='200px' height='200px'/>");
       }
 
 
@@ -218,5 +220,8 @@
           i++;
         }
       }
+
+      var smallImage = document.getElementById('img2');
+       smallImage.src = /*"data:image/jpeg;base64," +*/ imageData;
 
     }
