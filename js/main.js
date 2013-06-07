@@ -36,7 +36,8 @@
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      smallImage.src = "data:image/jpeg;base64," + imageData;
+      //smallImage.src = "data:image/jpeg;base64," + imageData;
+      alert(imageData);
 
     }
 
