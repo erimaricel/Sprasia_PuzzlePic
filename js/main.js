@@ -169,7 +169,7 @@
     function start(imageData) {
 
       
-      var i = 1;
+     /* var i = 1;
       var z = 1
       var x = 0;
       var y = 0;
@@ -219,9 +219,9 @@
           document.getElementById('img'+i).style.marginTop = -(y-1)*50+"px"; 
           i++;
         }
-      }
+      }*/
 
-      //var smallImage = document.getElementById('img2');
-      // smallImage.src = /*"data:image/jpeg;base64," +*/ imageData;
+      var smallImage = document.getElementById('img2');
+      smallImage.src = /*"data:image/jpeg;base64," +*/ imageData;
 
     }
