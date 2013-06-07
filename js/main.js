@@ -25,20 +25,19 @@
 
       // Get image handle
       //
-      var playboard = document.getElementById('playboard-normal');
+      var smallImage = document.getElementById('smallImage');
       //var playboard = $('.playboard').val();
 
-      alert("Your book is overdue.");
-
       //
-      playboard.width(100);
-      playboard.height(100);
-      playboard.style.display = 'block';
+     // playboard.width(100);
+      //playboard.height(100);
+      smallImage.style.display = 'block';
 
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      playboard.src = "data:image/jpeg;base64," + imageData;
+      smallImage.src = "data:image/jpeg;base64," + imageData;
+
     }
 
     // Called when a photo is successfully retrieved
