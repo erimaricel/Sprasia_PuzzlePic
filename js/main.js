@@ -28,7 +28,8 @@
       var playboard = document.getElementById('playboard-normal');
       //var playboard = $('.playboard').val();
 
-      // Unhide image elements
+      alert("Your book is overdue.");
+
       //
       playboard.width(100);
       playboard.height(100);
@@ -37,7 +38,7 @@
       // Show the captured photo
       // The inline CSS rules are used to resize the image
       //
-      playboard.src = /*"data:image/jpeg;base64," + */imageData;
+      playboard.src = "data:image/jpeg;base64," + imageData;
     }
 
     // Called when a photo is successfully retrieved
