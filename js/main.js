@@ -175,6 +175,7 @@
       var mintop = 500;
       var array = createRand();
 
+      alert(imageData);
       for(z=1;z<=16;z++)
       {
           var num = Math.floor(Math.random() * array.length);
