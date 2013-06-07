@@ -195,13 +195,13 @@ a {
 #btn-back:hover{
 	background: url("../images/small/buttons/back-hover.png") no-repeat center center;
 }
-#playboard-normal{
+.playboard-normal{
 	width: 260px;
 	height: 260px;
 	margin: 10% auto auto auto;
 	background: url("../images/small/normal-board.png") no-repeat center center;
 }
-#playboard-hard{
+.playboard-hard{
 	width: 260px;
 	height: 260px;
 	margin: 10% auto auto auto;
