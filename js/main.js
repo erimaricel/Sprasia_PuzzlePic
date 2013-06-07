@@ -32,8 +32,6 @@
      // playboard.width(100);
       //playboard.height(100);
       smallImage.style.display = 'block';
-      smallImage.width("260px");
-      smallImage.height("260px");
 
       // Show the captured photo
       // The inline CSS rules are used to resize the image
