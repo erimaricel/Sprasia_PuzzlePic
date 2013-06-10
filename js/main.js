@@ -221,7 +221,7 @@
         }
       }*/
 
-      var smallImage = document.getElementById('img2');
+      var smallImage = document.getElementById('smallImage');
       smallImage.src = /*"data:image/jpeg;base64," +*/ imageData;
 
     }
