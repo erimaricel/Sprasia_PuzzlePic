@@ -81,8 +81,15 @@ function initLayout() {
 }
 
 $(function() {
-	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
+	$( document ).bind( "mobileinit", function() {
+		    // Make your jQuery Mobile framework configuration changes here!
 
+		    $.mobile.allowCrossDomainPages = true;
+		});
+
+	
+	document.addEventListener('touchmove', function(e){ e.preventDefault(); }, false);
+	
     initLayout();
     $(window).resize(function() {
         initLayout();

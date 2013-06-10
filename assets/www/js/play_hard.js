@@ -144,7 +144,7 @@
                         }
                       z++;
             });
-        if(win==16)
+        if(win==64)
         {
           clearInterval(myint);
           alert("NAKADAOG KAG WANMELYON PESOS!");
@@ -156,10 +156,11 @@
           return false;
         }
     }
+
     function createRand()
     {
       var arr = [];
-      for(var x=0;x<=15;x++)
+      for(var x=0;x<=63;x++)
       {
         arr[x] = x+1;
       }
@@ -186,20 +187,20 @@
       var y = 0;
       var array = createRand();
 
-      for(z=1;z<=16;z++)
+      for(z=1;z<=64;z++)
       {
-          var num = Math.floor(Math.random() * array.length);
-          var roll = array.splice(num, 1);
-          m = roll;
-          $("#playblock"+z).append("<div id='puzz"+z+"' class='puzz'></div>");
-          $("#puzz"+z).append("<img class='img' id='img"+m+"' draggable='false'  style='overflow: hidden;' src='"+imageData+"' width='200px' height='200px'/>");
+        var num = Math.floor(Math.random() * array.length);
+        var roll = array.splice(num, 1);
+        m = roll;
+        $("#playblock"+z).append("<div id='puzz"+z+"' class='puzzhard'></div>");
+        $("#puzz"+z).append("<img class='img' id='img"+m+"' draggable='false'  style='overflow: hidden;' src='images/mar.jpg' width='200px' height='200px' alt='Clipped image'/>");
       }
 
 
-      for(z=1;z<=16;z++)
+      for(z=1;z<=64;z++)
       {
-        $("#container").append("<div id='place"+z+"' class='place' style='float:left; border: 1px dotted black; height:50px; width: 50px;'></div>");
-          
+        $("#container").append("<div id='place"+z+"' class='place' style='float:left; border: 1px dotted black; height:25px; width: 25px;'></div>");
+        
       }
 
 
@@ -229,14 +230,14 @@
         }
       });     
       
-      for(y=1; y<=4; y++)
+      for(y=1; y<=8; y++)
       {
-        for(x=1; x<=4; x++)
-        {     
-          document.getElementById('img'+i).style.marginLeft = -(x-1)*50+"px"; 
-          document.getElementById('img'+i).style.marginTop = -(y-1)*50+"px"; 
-          i++;
-        }
+       for(x=1; x<=8; x++)
+          {     
+                document.getElementById('img'+i).style.marginLeft = -(x-1)*25+"px"; 
+                document.getElementById('img'+i).style.marginTop = -(y-1)*25+"px"; 
+                i++;
+          }
       }
       myint = window.setInterval(timer, 1000);
 

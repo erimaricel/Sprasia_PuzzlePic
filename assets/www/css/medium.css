@@ -1,5 +1,5 @@
 body{
-	background: url("../images/medium/background.png") no-repeat top center;
+	background: url("../images/medium/background.png") repeat-x top center;
 }	
 .generic_linker {
 	width: 100%;

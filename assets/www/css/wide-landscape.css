@@ -1,5 +1,5 @@
 body{
-	background: url("../images/medium/background.png") no-repeat top center;
+	background: url("../images/medium/background.png") repeat-x top center;
 }	
 .generic_linker {
 	width: 100%;
@@ -72,14 +72,43 @@ body{
 #playboard-normal{
 	width: 400px;
 	height: 400px;
-	margin: 0 auto auto auto;
+	margin: 10px auto auto auto;
 	background: url("../images/medium/normal-board.png") no-repeat center center;
+}
+#playboard-normal #container{
+	width: 208px;
+	height: 208px;
+	margin: 0 auto 0 auto;
+	padding-top: 85px;
+}
+#playboard-normal #container .place{
+	float: left;
+	border: 1px dotted rgb(139, 222, 233);
+	height: 50px;
+	width: 50px;
+}
+.puzz{
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+	margin: 1px auto 0 auto;
+}
+.puzzhard{
+	height: 25px;
+	width: 25px;
+	overflow: hidden;
 }
 #playboard-hard{
 	width: 400px;
 	height: 400px;
 	margin: 0 auto auto auto;
 	background: url("../images/medium/hard-board.png") no-repeat center center;
+}
+#play-scoreboard {
+	text-align: center;
+}
+#play-timer {
+	text-align: center;
 }
 #play-scoreboard #score{
 	font-family: 'Calibri',Arial,sans-serif;
@@ -117,13 +146,19 @@ body{
 	float: left;
 	margin: 4px 5px 4px 5px;
 }
-#playblock-holder .playblock-hard{
+#playblock-holder-hard{
+	width: 600px;
+	margin: 0 auto 0 auto;
+	height: 232px;
+}
+#playblock-holder-hard .playblock-hard{
 	width: 30px;
 	height: 30px;
 	border: 2px dotted rgb(182, 67, 13);
 	float: left;
 	margin: 4px 5px 4px 5px;
 }
+
 /* Highscore Page*/	
 #header-title {
 	margin-top: 1%;

@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/narrow.css" />
-    <meta charset="utf-8">
-    <title>PuzzlePic</title>
-    <script type="text/javascript" src="js/jquery-1.9.1.js"></script> 
-    <script type="text/javascript" src="js/jquery-ui.js"></script> 
-    <script src="js/layout.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="phonegap.js"></script>
-    <script> $( init ); </script>
+<meta charset="utf-8">
+<title>PuzzlePic</title>
+<script type="text/javascript" src="js/jquery-1.9.1.js"></script> 
+<script type="text/javascript" src="js/jquery-ui.js"></script> 
+<script type="text/javascript" src="js/layout.js"></script>
+<script type="text/javascript" src="js/play_normal.js"></script>
+<!--<script type="text/javascript" src="cordova-2.7.0.js"></script>-->
 </head>
 
-<body onload="capturePhoto();">
+<body onload="init()">
     <header>
         <p>Beta version</p>
     </header>
     <section>
-        <div id="wrapper">
-            <a href="index.html"><div id="main-menu"></div></a>
+         <div id="wrapper">
+            <a href="main.html"><div id="main-menu"></div></a>
             <div id="play-status">
                 <div id="play-scoreboard">
                     <span id="score">Score:</span>
-                    <span id="points"> 00000</span>
+                    <span id="points">0</span>
                 </div>
-                <div id="play-timer">00:00</div>
+                <div id="play-timer">0</div>
             </div>
-            <div id="playboard-normal" >
-                <div id='container'></div>
-            </div>
-            <div id="playblock-holder">
+
+                <div id="playboard-normal"><div id='container' ></div></div>
+                <div id="playblock-holder">
                 <div id="playblock1" class="playblock-normal"></div>
                 <div id="playblock2" class="playblock-normal"></div>
                 <div id="playblock3" class="playblock-normal"></div>
@@ -50,10 +48,8 @@
             </div>
         </div><!--End Wrapper-->
     </section>
-    <footer>
+<footer>
         <p>Sprasia Philippines Incorporated</p>
     </footer>
-   
-
 </body>
 </html>
