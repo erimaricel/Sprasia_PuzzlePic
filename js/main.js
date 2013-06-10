@@ -7,6 +7,10 @@
 	
     function init(){
     	document.addEventListener("deviceready",onDeviceReady,false);
+      document.addEventListener("touchstart", touchHandler, true);
+      document.addEventListener("touchmove", touchHandler, true);
+      document.addEventListener("touchend", touchHandler, true);
+      document.addEventListener("touchcancel", touchHandler, true);
     }
 	
     // Cordova is ready to be used!
@@ -69,7 +73,7 @@
     //
     function capturePhoto() {
 	  // Take picture using device camera and retrieve image as base64-encoded string
-	    navigator.camera.getPicture(onPhotoDataSuccess, onFail,{
+	    navigator.camera.getPicture(start, onFail,{
 	          quality : 25, 
 	          destinationType : Camera.DestinationType.FILE_URI, 
 	          sourceType : Camera.PictureSourceType.CAMERA, 
@@ -104,12 +108,6 @@
       alert('Failed because: ' + message);
     }
 
-    function init() {
-      document.addEventListener("touchstart", touchHandler, true);
-      document.addEventListener("touchmove", touchHandler, true);
-      document.addEventListener("touchend", touchHandler, true);
-      document.addEventListener("touchcancel", touchHandler, true);   
-    }
 
     function touchHandler(event)
     {
@@ -154,6 +152,7 @@
           return false;
         }
     }
+
     function createRand()
     {
       var arr = [];
@@ -169,7 +168,7 @@
     function start(imageData) {
 
       
-     /* var i = 1;
+     var i = 1;
       var z = 1
       var x = 0;
       var y = 0;
@@ -219,9 +218,8 @@
           document.getElementById('img'+i).style.marginTop = -(y-1)*50+"px"; 
           i++;
         }
-      }*/
+      }
 
-      var smallImage = document.getElementById('smallImage');
-      smallImage.src = /*"data:image/jpeg;base64," +*/ imageData;
+      
 
     }
